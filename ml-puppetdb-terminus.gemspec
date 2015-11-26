@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "ml-puppetdb-terminus"
-  gem.version       = "3.2.1"
+  gem.version       = "3.2.1.1"
   gem.authors       = ["Mark Lawler"]
   gem.email         = ["marklawler@gmail.com"]
   gem.description   = "Puppet terminus files to connect to PuppetDB - in a gem"
@@ -12,11 +12,10 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/marklawler/ml-puppetdb-terminus"
   gem.license       = "Apache-2.0"
 
-  gem.files         = Dir['LICENSE.txt', 'NOTICE.txt', 'README.md', 'puppet/lib/**/*', 'puppet/spec/**/*']
+  gem.files         = Dir['LICENSE.txt', 'NOTICE.txt', 'README.md', 'lib/**/*']
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_runtime_dependency 'json', '~> 0'
   gem.add_runtime_dependency 'puppet', ['>= 3.8.1', '<5.0']
 end
