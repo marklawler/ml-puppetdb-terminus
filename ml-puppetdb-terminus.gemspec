@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "ml-puppetdb-terminus"
-  gem.version       = "3.2.1"
+  gem.version       = "3.2.1.1"
   gem.authors       = ["Mark Lawler"]
   gem.email         = ["marklawler@gmail.com"]
   gem.description   = "Puppet terminus files to connect to PuppetDB - in a gem"
